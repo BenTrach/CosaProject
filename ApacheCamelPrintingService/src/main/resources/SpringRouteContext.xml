@@ -1,0 +1,46 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+      http://www.springframework.org/schema/beans
+      http://www.springframework.org/schema/beans/spring-beans.xsd
+      http://camel.apache.org/schema/spring
+      http://camel.apache.org/schema/spring/camel-spring.xsd">
+ <bean id="docSys" class="de.leuphana.model.documentsystem.behaviour.DocumentSystem">
+
+</bean>
+<bean id="printSys" class="de.leuphana.model.printingsystem.behaviour.PrintingSystem"/>
+<bean id="statSys" class="de.leuphana.model.statisticssystem.behaviour.StatisticsSystem"/>
+<bean id="messSys" class="de.leuphana.model.messagingsystem.behaviour.MessagingSystem"/>
+<!-- <bean id="printingRouteBuilder" -->
+<!-- 		class="de.leuphana.routes.PrintingRouteBuilder" /> -->
+<!-- <camelContext xmlns="http://camel.apache.org/schema/spring"> -->
+
+<!-- <routeBuilder ref="printingRouteBuilder"></routeBuilder> -->
+
+<!-- </camelContext> -->
+
+<!-- 	<bean id="jms" class="org.apache.camel.component.jms.JmsComponent"> -->
+<!-- 		<property name="connectionFactory"> -->
+<!-- 			<bean class="org.apache.activemq.ActiveMQConnectionFactory"> -->
+<!-- 				<property name="brokerURL" value="vm://localhost" /> -->
+<!-- 			</bean> -->
+<!-- 		</property> -->
+<!-- 	</bean> -->
+<!-- 	<bean id="documentConverter" -->
+<!-- 		class="de.leuphana.converter.ManageableConverter" /> -->
+<!-- 	<bean id="stringConverter" -->
+<!-- 		class="de.leuphana.converter.StringConverter" /> -->
+<!-- 	<bean id="printingProcessor" -->
+<!-- 		class="de.leuphana.processor.PrintingProcessor" /> -->
+
+<!-- 	<bean id="printableConverter" -->
+<!-- 		class="de.leuphana.converter.PrintableConverter" /> -->
+
+<!-- 	<camelContext -->
+<!-- 		xmlns="http://camel.apache.org/schema/spring"> -->
+
+<!-- 		<routeBuilder ref="printingRouteBuilder" /> -->
+
+<!-- 	</camelContext> -->
+</beans>

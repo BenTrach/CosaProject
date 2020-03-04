@@ -1,0 +1,3 @@
+de.leuphana.converter.StringConverter,
+de.leuphana.converter.ManageableConverter,
+de.leuphana.converter.PrintableConverter
